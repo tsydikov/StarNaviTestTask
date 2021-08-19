@@ -12,6 +12,7 @@ const [squaresNumber,setSquaresNumber]=useState('')
 const [alerts, setAlerts] = useState([])
 
  function startGame(squaresNumber) {
+   console.log('begin')
   setSquares([])
   setAlerts([])
   drawSquares(squaresNumber)

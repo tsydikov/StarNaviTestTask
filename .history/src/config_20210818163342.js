@@ -1,0 +1,1 @@
+export default url ='https://demo1030918.mockable.io/'

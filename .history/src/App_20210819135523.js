@@ -6,6 +6,7 @@ import Alert from './components/Alert'
 import { createSquaresArray } from './function/function'
 import { BACKGROUNDS } from "./constants/constants";
 
+
 function App() {
 const [squares, setSquares] = useState([])
 const [squaresNumber,setSquaresNumber]=useState('')
@@ -28,7 +29,16 @@ const [alerts, setAlerts] = useState([])
     ? BACKGROUNDS.WHITE
     : BACKGROUNDS.BLUE
    e.target.style.background = newBackground
-   alert(e.target.id, newBackground) 
+   alert(e.target.id, newBackground)
+
+  // if (e.target.style.background === 'blue') {
+  //   e.target.style.background = 'white'
+  //   alert(e.target.id, e.target.style.background)
+  // } else {
+  //   e.target.style.background = 'blue'
+  //   alert(e.target.id, e.target.style.background)
+  // }
+  
 }
 
 function alert (key, style) {
